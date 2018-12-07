@@ -58,7 +58,7 @@
                                 <img id="download-bitcoin" src="images/icons/orange/download-bitcoin.png" alt="download bitcoin"/>
                             </span>
                     <div class="feature-box-content">
-                        <h3>Earn Like a Proffessional</h3>
+                        <h3>Earn Like a Prossss</h3>
                         <p>Designed for both beginners and advanced investors</p>
                     </div>
                 </div>
