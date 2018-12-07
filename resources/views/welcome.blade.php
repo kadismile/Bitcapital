@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Bitech Capital</title>
-
+        <title>Bitech Capital Group</title>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
@@ -301,7 +301,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <!-- Copyright Text Starts -->
-                            <p class="text-center">Copyright © 2018 Bitech Capital All Rights Reserved</p>
+                            <p class="text-center">Copyright © 2018 Bitech Capital Group All Rights Reserved</p>
                             <!-- Copyright Text Ends -->
                         </div>
                     </div>

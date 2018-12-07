@@ -218,8 +218,8 @@
                 <!-- Image Ends -->
                 <!-- Content Starts -->
                 <div class="col-sm-12 col-md-7 col-lg-6">
-                    <h3 class="title-about">WE ARE BitechCapital</h3>
-                    <p class="about-text">BitechCapital is a private, lawfully registered online investment
+                    <h3 class="title-about">WE ARE Bitech Capital Group</h3>
+                    <p class="about-text">Bitech Capital Group is a private, lawfully registered online investment
                         firm with the goal of earning the best profit potential from Crypto-currency market.
                         We provide a wide range of investment services to a substantial and diversified
                         client base that includes corporations, financial institutions, governments and
