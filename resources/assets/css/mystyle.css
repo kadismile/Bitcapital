@@ -1,0 +1,12 @@
+.deposit{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background: #fd961a;
+    color:white;
+    font-weight: bolder
+}
+
+.myError {
+    font-size: 11px;
+    color: #db3939;
+}
