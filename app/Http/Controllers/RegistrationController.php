@@ -54,7 +54,15 @@ class RegistrationController extends Controller
                    //add ref_id
                     Sentinel::update($user, array('ref_id'=> $user->id.mt_rand(0, 10000)));
                     //Send Mail
-                    RegistrationJob::dispatch($user)->delay(now()->addSeconds(5));
+                    //RegistrationJob::dispatch($user)->delay(now()->addSeconds(5));
+
+                    Mail::send('emails.registrationMail', compact('user'),
+                        function($message) use ($user){
+                            $message->to($user->email);
+                            $message->subject("Hello $user->first_name", "Welcome On board");
+                        }
+                    );
+
                     return redirect()->route('account', [$user->slug])->with(['success'=> 'Registration Successfully']);
                 }else{
                     return response()->json([

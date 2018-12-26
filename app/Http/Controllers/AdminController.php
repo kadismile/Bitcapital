@@ -166,14 +166,21 @@ class AdminController extends Controller
 
         $users = ["email"=>"$email", "subject"=>"$subject", "message"=>"$body", 'from' => 'sample@sample.comt',];
 
-        AdminMailJob::dispatch($users)->delay(now()->addSeconds(5));
+       // AdminMailJob::dispatch($users)->delay(now()->addSeconds(5));
 
-        /*Mail::send('emails.admin.personal-mail',
+
+        Mail::send('emails.admin.personal-mail', compact('users'),
             function($message) use ($users){
-                $message->to("$request->email");
-                $message->subject("$request->subject");
+                $message->to($users['email']);
+                $message->subject($users['subject']);
             }
-        );*/
+        );
+
+        /*Mail::send( 'emails.admin.personal-mail',compact('data'), function( $message ) use ($users)
+        {
+            $message->to( $users['email'] )->from( $users['from'], $users['first_name'] )->subject( 'Welcome!' );
+
+        });*/
 
        /* $data = array( 'email' => "$email", 'first_name' => 'Lar', 'from' => 'sample@sample.comt',
                     'from_name' => 'Vel', 'body'=>"$body" );
